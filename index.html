@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <title>Inardys</title>
+</head>
+<body>
+<header>
+        <div id="Logo">
+        <img  src="imagens/Inardys Intertaime.jpg" alt="Logo inardys" width="80px">
+        </div>
+        <ul>
+            <li>
+                <!-- <img src="imagens/email_logo.png" width="8%"> -->
+                <a target="_blanck" href="mailto:gabrielnrdesp@gmail.com" >Email</a>
+            </li>
+            <li>
+                <!-- <img src="imagens/discord_logo.png" width="8%"> -->
+                <a target="_blanck" href="https://discord.com/channels/@me/736443041421721732">Discord</a>
+            </li>
+            <li>
+                <!-- <img src="imagens/inta_logo.png" width="8%" -->
+                <a target="_blanck" href="http:www.instagram.com">Intagram</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="conteiner">
+            <div class="name">
+                <h4>Inardys</h4>
+                <h1>Gabriel Nardes</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-carrot"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quis, magnam sint, beatae officia maiores veritatis explicabo esse cum laudantium deleniti tempora vitae, porro corrupti?</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu email favorito"></imput>
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
